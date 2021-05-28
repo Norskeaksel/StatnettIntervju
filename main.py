@@ -29,11 +29,4 @@ myMap.add_data(data=last_covid_geo_data, name='Last Covid Data')
 
 myMap.save_to_html(file_name='Covid_Data.html')
 
-"""countries_url="https://api.covid19api.com/countries"
-available_countries=readURL(countries_url)
-countries=[]
-for dict in available_countries:
-    countries.append(dict['Country'])
-tolerance = 10 * 360 / 43200
-world["geometry"] = world.geometry.simplify(tolerance=tolerance, preserve_topology=True)    
-"""
+

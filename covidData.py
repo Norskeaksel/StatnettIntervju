@@ -5,9 +5,6 @@ from tqdm import tqdm
 
 
 def readURL(url):
-    """:param url: address to downloadable data
-       :return: A json file of the data found at the url
-    """
     throttled_request_error: int = 429
     status_code = throttled_request_error
     while status_code == throttled_request_error:
@@ -20,7 +17,6 @@ def readURL(url):
 
 
 def countryCovidData(country, start, end):
-    # url=f"https://api.covid19api.com/country/{country}/live?from={start}&to={end}"
     url = f"https://api.covid19api.com/country/{country}?from={start}&to={end}"
     url_data = readURL(url)
     url_df = pd.DataFrame(url_data)
