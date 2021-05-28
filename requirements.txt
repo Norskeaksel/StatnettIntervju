@@ -1,0 +1,6 @@
+requests==2.25.1
+countrygroups==0.11.0
+pandas==1.2.4
+geopandas==0.9.0
+keplergl==0.2.2
+tqdm==4.61.0
